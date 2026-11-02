@@ -1,0 +1,18 @@
+# Edit these acquisition values before building or applying the pipeline.
+# Frame interval is the single canonical timing value. The pipeline derives
+# frame_interval_seconds and frame_rate_fps from it.
+acquisition:
+  pixel_size_um_per_pixel: 0.094
+  frame_interval_ms: 10.0
+
+# All random trajectory checks use a shared pixel span and tick interval.
+visualization:
+  visual_check_tick_step_pixels: 10.0
+  visual_check_minimum_span_pixels: 40.0
+  video_playback_fps: 10.0
+  video_tail_frames: 10
+  video_context_frames: 4
+
+# Used when apply is run without --output-dir.
+output:
+  default_analysis_folder_name: "RRL_track_behaviour_ML_analysis"

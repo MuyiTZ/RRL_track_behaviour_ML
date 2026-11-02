@@ -1,0 +1,24 @@
+{
+  "format_version": 1,
+  "source_release": "Trainingset-HAP1-H2B-FC-10ms-Leica-094um-260916",
+  "source_scikit_learn": "1.4.2",
+  "purpose": "Inference only; original fitted parameters, no retraining.",
+  "formats": {
+    "mahalanobis": "float64 JSON",
+    "logistic": "float64 JSON",
+    "gradient_boosting": "float64 JSON numeric trees",
+    "rbf_svm": "ONNX float32"
+  },
+  "sha256": {
+    "mahalanobis.json": "7b6fdf9f54aabeeaf24448630b1d89868e7980d7f121f9aa6abded0578d5710f",
+    "logistic.json": "fe69bd5eaf6ceab4b88bfe6681d22ea38cb35ebfedb026d88bfc2173f7e1177c",
+    "rbf_svm.onnx": "aae202dab249d7c1eea4a4a5c087c0aee1d0e5cab0f769df43b8f037ccefcf5a",
+    "gradient_boosting.json": "50212ab87899b8b0fe5b55cc5c0a9688dd3b2a4cb4cef3359f51ddd393db4b24"
+  },
+  "original_joblib_sha256": {
+    "RRL_gradient_boosting_model.joblib": "37a71b1dc8e00848d4079d3a8fbc76dd2655a47a84a79889452074ebf6c5815d",
+    "RRL_logistic_model.joblib": "eb2dd897f09e7540feccad4c3dc77a681cda3bdd7e5eeb842c87faa125aac1ca",
+    "RRL_mahalanobis_model.joblib": "fe97ee8fa0e6d35a6bf130c93eddbbe961003fb75ac398224b28f7228b72febc",
+    "RRL_rbf_svm_model.joblib": "c2b6ba427d13acad5eeaf70de92e87b66ec0a059bd375d3ecf1a6036b5d8de07"
+  }
+}

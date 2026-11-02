@@ -1,0 +1,2 @@
+sigma_x_center90_um,sigma_y_center90_um,sigma_rms_center90_um,msd_offset_2d_two_position_um2,rg2_noise_contribution_w10_um2,hull_null_median_w10_um2,pixel_size_um,frame_interval_ms,window_frames,window_stride,motion_blur_coefficient_simulation,source
+0.0318652074638637,0.0338615243447604,0.0328785209343872,0.004323988555331752,0.0019457948498992884,0.005542306648386551,0.094,10.0,10,5,0.16666666666666666,fixed-cell center90 localization calibration; local source path omitted

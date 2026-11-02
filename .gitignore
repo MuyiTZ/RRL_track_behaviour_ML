@@ -1,0 +1,9 @@
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+smoke_output*/
+*_RRL_track_behaviour_ML_analysis/
+RRL_track_behaviour_ML_analysis/
+*.log
+.DS_Store

@@ -1,0 +1,9 @@
+{
+  "policy": "chromatin_bound_like_centroid_left",
+  "scope": "all PCA visualizations and exported PCA scores produced by the 260916 replacement release",
+  "rule": "After PCA fitting, if the mean PC1 score of chromatin_bound_like is greater than the mean PC1 score of all comparison labels, multiply PC1 scores and PC1 loadings by -1.",
+  "effect_on_explained_variance": "none",
+  "effect_on_pairwise_geometry": "none",
+  "effect_on_machine_learning_predictions": "none; the release classifiers use the four input features directly and do not use PCA scores",
+  "reason": "stable visual orientation across reference builds and target-dataset applications"
+}

@@ -1,0 +1,53 @@
+project_name: RRL_track_behaviour_ML
+dataset_name: HAP1-H2B-0117-FC
+reference:
+  backend: replacement_260916
+  release_name: Trainingset-HAP1-H2B-FC-10ms-Leica-094um-260916
+paths:
+  output_dir: outputs/Trainingset-HAP1-H2B-FC-10ms-Leica-094um-260916
+feature_calculation:
+  pixel_size_um: 0.094
+  frame_interval_ms: 10.0
+  max_msd_lag_frames: 4
+  minimum_valid_points: 5
+anchor_core2:
+  single_bound_group: single_bound
+  confined_low_mobility_group: single_constrained__confined_low_mobility
+  candidate_groups:
+  - bound_constrained
+  - single_constrained__intermediate_or_less_confined
+  single_bound_high_D_tukey_multiplier: 1.5
+  containment_quantiles:
+  - 0.5
+  - 0.75
+  - 0.9
+linear_artifact_rule:
+  pca_linearity_min: 0.9999
+  line_rmse_norm_max: 0.008
+  max_step_min_pixels: 100.0
+  minimum_points: 4
+model:
+  random_seed: 20260824
+  cross_validation_folds: 5
+  positive_probability_threshold: 0.6
+  negative_probability_threshold: 0.4
+  minimum_positive_votes: 3
+  maximum_negative_votes: 1
+  visual_check_sample_size: 24
+  visual_check_minimum_per_group: 8
+visualization:
+  visual_check_tick_step_pixels: 10.0
+  visual_check_minimum_span_pixels: 40.0
+  video_playback_fps: 10.0
+  video_tail_frames: 10
+  video_context_frames: 4
+output:
+  default_analysis_folder_name: RRL_track_behaviour_ML_analysis
+behavior_files:
+  single_bound: single-behaviour-track-bound.csv
+  single_constrained: single-behaviour-track-constraint-only.csv
+  single_diffusive: single-behaviour-track-diffusive.csv
+  bound_diffusive: multi-behaviour-track-bound-diffusion.csv
+  bound_constrained: multi-behaviour-track-bound-constraint.csv
+  constrained_diffusive: multi-behaviour-track-constraint-diffusion.csv
+  all_three: multi-behaviour-track-all-three.csv

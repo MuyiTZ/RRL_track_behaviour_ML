@@ -1,0 +1,21 @@
+{
+  "release_name": "Trainingset-HAP1-H2B-FC-10ms-Leica-094um-260916",
+  "model_features": [
+    "log_rg2_noise_ratio_w10",
+    "log_hull_noise_ratio_w10",
+    "log_msd1_fixed90_ratio",
+    "alpha_observed"
+  ],
+  "pixel_size_um": 0.094,
+  "frame_interval_seconds": 0.01,
+  "exposure_seconds_simulation": 0.01,
+  "sigma_x_center90_um": 0.0318652074638637,
+  "sigma_y_center90_um": 0.0338615243447604,
+  "msd_offset_um2": 0.004323988555331752,
+  "geometry_window_frames": 10,
+  "geometry_window_stride": 5,
+  "random_seed": 20260916,
+  "training_tracks": 4580,
+  "positive_reference_tracks": 3191,
+  "operational_labels_only": true
+}

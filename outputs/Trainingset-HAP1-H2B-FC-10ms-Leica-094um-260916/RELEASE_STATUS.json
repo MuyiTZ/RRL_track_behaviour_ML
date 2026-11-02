@@ -1,0 +1,9 @@
+{
+  "release_name": "Trainingset-HAP1-H2B-FC-10ms-Leica-094um-260916",
+  "status": "active_replacement",
+  "promotion_gates_passed": true,
+  "source_safety_snapshot_unchanged": true,
+  "supersedes": "H2B_reference_pixel094 (historical release; not distributed)",
+  "historical_reference_modified": false,
+  "created_at": "2026-09-16T21:15:20-04:00"
+}
